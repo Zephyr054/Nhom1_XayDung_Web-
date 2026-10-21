@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tin Nhanh 24h - Công nghệ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">TIN<span>NHANH</span>24H</div>
+      <div class="date" id="today"></div>
+      <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="quocte.html">Quốc tế</a>
+        <a href="giaitri.html">Giải trí</a>
+        <a href="thethao.html">Thể thao</a>
+        <a href="congnghe.html" class="active">Công nghệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="page-title">Tin tức công nghệ</h1>
+    <div class="grid">
+      <article class="card">
+        <div class="thumb c-tech">
+          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=90" alt="AI" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="body">
+          <span class="tag">AI</span>
+          <h3>Thế hệ chip AI mới hứa hẹn tiết kiệm điện gấp đôi</h3>
+          <p>Kiến trúc mới giúp các trung tâm dữ liệu giảm chi phí vận hành.</p>
+          <div class="meta">6 giờ trước</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb c-tech">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=90" alt="Di động" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="body">
+          <span class="tag">Di động</span>
+          <h3>Điện thoại gập thế hệ mới mỏng hơn, pin lâu hơn</h3>
+          <p>Nhiều hãng cùng chạy đua cải thiện độ bền bản lề.</p>
+          <div class="meta">7 giờ trước</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb c-tech">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=90" alt="Bảo mật" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="body">
+          <span class="tag">Bảo mật</span>
+          <h3>Chuyên gia khuyến cáo bật xác thực hai lớp cho mọi tài khoản</h3>
+          <p>Các vụ lộ mật khẩu ngày càng phổ biến trong năm nay.</p>
+          <div class="meta">9 giờ trước</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb c-tech">
+          <img src="https://images.unsplash.com/photo-1558441719-67724128527a?auto=format&fit=crop&w=1200&q=90" alt="Xe điện" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="body">
+          <span class="tag">Xe điện</span>
+          <h3>Trạm sạc nhanh được mở rộng tại nhiều tuyến cao tốc</h3>
+          <p>Thời gian sạc đầy giảm xuống chỉ còn vài chục phút.</p>
+          <div class="meta">11 giờ trước</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb c-tech">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=90" alt="Vũ trụ" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="body">
+          <span class="tag">Vũ trụ</span>
+          <h3>Vệ tinh internet thế hệ mới được phóng thành công</h3>
+          <p>Dịch vụ hứa hẹn phủ sóng tới các vùng sâu vùng xa.</p>
+          <div class="meta">Hôm qua</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb c-tech">
+          <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=90" alt="Máy tính" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="body">
+          <span class="tag">Máy tính</span>
+          <h3>Laptop mỏng nhẹ tích hợp AI trở thành xu hướng mua sắm</h3>
+          <p>Người dùng quan tâm tới thời lượng pin và khả năng xử lý tại chỗ.</p>
+          <div class="meta">Hôm qua</div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Tin Nhanh 24h</p>
+    <p style="margin-top:8px">
+      <a href="index.html">Trang chủ</a>|<a href="quocte.html">Quốc tế</a>|<a href="giaitri.html">Giải trí</a>|<a href="thethao.html">Thể thao</a>|<a href="congnghe.html">Công nghệ</a>
+    </p>
+  </footer>
+
+  <script>
+    const d = new Date();
+    document.getElementById("today").textContent =
+      d.toLocaleDateString("vi-VN", { weekday: "long", day: "2-digit", month: "2-digit", year: "numeric" });
+  </script>
+</body>
+</html>
