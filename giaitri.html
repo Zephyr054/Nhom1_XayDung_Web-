@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tin Nhanh 24h - Giải trí</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">TIN<span>NHANH</span>24H</div>
+            <div class="date" id="today"></div>
+            <nav>
+                <a href="index.html">Trang chủ</a>
+                <a href="quocte.html">Quốc tế</a>
+                <a href="giaitri.html" class="active">Giải trí</a>
+                <a href="thethao.html">Thể thao</a>
+                <a href="congnghe.html">Công nghệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="page-title">Tin tức giải trí</h1>
+        <div class="grid">
+            <article class="card">
+                <div class="thumb c-ent"><img src="https://bcp.cdnchinhphu.vn/334894974524682240/2023/10/12/ngaydienanhvietnam-1697109607329416571724.jpg" alt="Điện ảnh"></div>
+                <div class="body"><span class="tag">Điện ảnh</span>
+                    <h3>Tận dụng thế mạnh của điện ảnh để quảng bá hình ảnh Việt Nam ra thế giới</h3>
+                    <p>Thị trường điện ảnh Việt Nam thiếu tính bền vững và cạnh tranh chưa lành mạnh</p>
+                    <div class="meta">3 giờ trước</div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="thumb c-ent"><img src="https://cdn-images.vtv.vn/66349b6076cb4dee98746cf1/2026/08/29/package-media-32279884311817880179262.png" alt="đại hội âm nhạc"></div>
+                <div class="body"><span class="tag">Âm nhạc</span>
+                    <h3>Heineken® công bố "The World Of Heineken®" – trải nghiệm 4 thế giới đam mê cùng Charlie Puth</h3>
+                    <p>siêu trải nghiệm hội tụ Bóng đá, F1®, Pickleball và Âm nhạc</p>
+                    <div class="meta">4 giờ trước</div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="thumb c-ent"><img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2026/10/19/1785590/Thoi-Tiet-Mua-1.jpg?w=800&h=496&crop=auto&scale=both" alt="Thời tiết"></div>
+                <div class="body"><span class="tag">Truyền hình</span>
+                    <h3>Dự báo thời tiết 3 ngày tới từ 20.10 đến 22.10 ở cả ba miền</h3>
+                    <p>Dự báo thời tiết 3 ngày tới ở Bắc Bộ ngày nắng; đêm 21-22.10 có mưa rào rải rác và có nơi có dông.</p>
+                    <div class="meta">6 giờ trước</div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="thumb c-ent"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZmQtC3jZilJL_hTqkW_esPvRVCnd96MgzLlGVXl1KJ-PM_qL6Xv4BOs&s=10" alt="oscar"></div>
+                <div class="body"><span class="tag">Giải thưởng</span>
+                    <h3>Danh sách kết quả lễ trao giải Oscar 2026</h3>
+                    <p>Bộ phim "One Battle After Another" giành tổng cộng 6 giải thưởng lớn</p>
+                    <div class="meta">8 giờ trước</div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="thumb c-ent"><img src="https://bcp.cdnchinhphu.vn/Uploaded/nguyencongviet/2017_07_31/vong_phan_zxjz.jpg" alt="sân khấu"></div>
+                <div class="body"><span class="tag">Sân khấu</span>
+                    <h3>Vở kịch kinh điển trở lại với phiên bản đương đại</h3>
+                    <p>Trình diễn những vở kịch còn mãi với thời gian” trong tháng 11</p>
+                    <div class="meta">10 giờ trước</div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="thumb c-ent"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh4h99hRsCiQzBUDEdD8iDvKYyYbaqTfqadz5YNq2MFq3PwBfY6HfHkfGQ&s=10" alt="Bộ phim mới"></div>
+                <div class="body"><span class="tag">Âm nhạc</span>
+                    <h3>Album mới của nghệ sĩ trẻ đứng đầu bảng xếp hạng</h3>
+                    <p>M-TP OFFICIAL ALBUM</p>
+                    <div class="meta">Hôm qua</div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Tin Nhanh 24h</p>
+        <p style="margin-top:8px">
+            <a href="index.html">Trang chủ</a>|<a href="quocte.html">Quốc tế</a>|<a href="giaitri.html">Giải trí</a>|<a href="thethao.html">Thể thao</a>|<a href="congnghe.html">Công nghệ</a>
+        </p>
+    </footer>
+
+    <script>
+        const d = new Date();
+        document.getElementById("today").textContent =
+            d.toLocaleDateString("vi-VN", {
+                weekday: "long",
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric"
+            });
+    </script>
+</body>
+
+</html>
