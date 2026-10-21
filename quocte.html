@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tin Nhanh 24h - Quốc tế</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">TIN<span>NHANH</span>24H</div>
+      <div class="date" id="today"></div>
+      <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="quocte.html" class="active">Quốc tế</a>
+        <a href="giaitri.html">Giải trí</a>
+        <a href="thethao.html">Thể thao</a>
+        <a href="congnghe.html">Công nghệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="page-title">Tin tức quốc tế</h1>
+    <div class="grid">
+      <article class="card"><div class="thumb c-world">🌍</div><div class="body"><span class="tag">Quốc tế</span><h3>Hội nghị thượng đỉnh khu vực khai mạc với nhiều cam kết hợp tác mới</h3><p>Các nhà lãnh đạo thảo luận về thương mại, khí hậu và an ninh năng lượng.</p><div class="meta">2 giờ trước</div></div></article>
+      <article class="card"><div class="thumb c-world">📈</div><div class="body"><span class="tag">Kinh tế</span><h3>Kinh tế toàn cầu tăng trưởng chậm lại trong quý này</h3><p>Các chuyên gia dự báo lạm phát sẽ hạ nhiệt dần trong năm tới.</p><div class="meta">4 giờ trước</div></div></article>
+      <article class="card"><div class="thumb c-world">🌊</div><div class="body"><span class="tag">Môi trường</span><h3>Nhiều quốc gia ven biển tăng cường ứng phó triều cường</h3><p>Kế hoạch đầu tư hạ tầng chống ngập được công bố.</p><div class="meta">5 giờ trước</div></div></article>
+      <article class="card"><div class="thumb c-world">✈️</div><div class="body"><span class="tag">Du lịch</span><h3>Ngành hàng không quốc tế phục hồi mạnh mẽ</h3><p>Lượng hành khách vượt mức trước đại dịch ở nhiều tuyến bay.</p><div class="meta">7 giờ trước</div></div></article>
+      <article class="card"><div class="thumb c-world">🤝</div><div class="body"><span class="tag">Ngoại giao</span><h3>Hai nước ký thỏa thuận hợp tác giáo dục và văn hóa</h3><p>Chương trình trao đổi sinh viên sẽ được mở rộng từ năm học tới.</p><div class="meta">9 giờ trước</div></div></article>
+      <article class="card"><div class="thumb c-world">⚡</div><div class="body"><span class="tag">Năng lượng</span><h3>Điện gió ngoài khơi trở thành nguồn đầu tư nóng</h3><p>Hàng loạt dự án quy mô lớn được phê duyệt tại châu Âu và châu Á.</p><div class="meta">Hôm qua</div></div></article>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Tin Nhanh 24h</p>
+    <p style="margin-top:8px">
+      <a href="index.html">Trang chủ</a>|<a href="quocte.html">Quốc tế</a>|<a href="giaitri.html">Giải trí</a>|<a href="thethao.html">Thể thao</a>|<a href="congnghe.html">Công nghệ</a>
+    </p>
+  </footer>
+
+  <script>
+    const d = new Date();
+    document.getElementById("today").textContent =
+      d.toLocaleDateString("vi-VN", { weekday: "long", day: "2-digit", month: "2-digit", year: "numeric" });
+  </script>
+</body>
+</html>

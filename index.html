@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tin Nhanh 24h - Trang chủ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">TIN<span>NHANH</span>24H</div>
+      <div class="date" id="today"></div>
+      <nav>
+        <a href="index.html" class="active">Trang chủ</a>
+        <a href="quocte.html">Quốc tế</a>
+        <a href="giaitri.html">Giải trí</a>
+        <a href="thethao.html">Thể thao</a>
+        <a href="congnghe.html">Công nghệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="notice">Nội dung bài viết trong website này là dữ liệu mẫu để minh họa giao diện.</div>
+
+    <section class="hero">
+      <a href="quocte.html" class="card big">
+        <div class="thumb c-world">🌍</div>
+        <div class="body">
+          <span class="tag">Quốc tế</span>
+          <h3>Hội nghị thượng đỉnh khu vực khai mạc với nhiều cam kết hợp tác mới</h3>
+          <p>Các nhà lãnh đạo thảo luận về thương mại, biến đổi khí hậu và an ninh năng lượng trong chương trình nghị sự kéo dài nhiều ngày.</p>
+          <div class="meta">2 giờ trước</div>
+        </div>
+      </a>
+      <div class="side">
+        <a href="giaitri.html" class="card">
+          <div class="body">
+            <span class="tag">Giải trí</span>
+            <h3>Bộ phim mới phá kỷ lục doanh thu phòng vé ngay tuần đầu công chiếu</h3>
+            <div class="meta">3 giờ trước</div>
+          </div>
+        </a>
+        <a href="thethao.html" class="card">
+          <div class="body">
+            <span class="tag">Thể thao</span>
+            <h3>Trận derby kịch tính khép lại với tỷ số khó tin ở phút bù giờ</h3>
+            <div class="meta">5 giờ trước</div>
+          </div>
+        </a>
+        <a href="congnghe.html" class="card">
+          <div class="body">
+            <span class="tag">Công nghệ</span>
+            <h3>Thế hệ chip AI mới hứa hẹn tiết kiệm điện gấp đôi</h3>
+            <div class="meta">6 giờ trước</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <h2 class="section-title">Quốc tế <a href="quocte.html">Xem thêm »</a></h2>
+    <div class="grid">
+      <a href="quocte.html" class="card"><div class="thumb c-world">🛰️</div><div class="body"><span class="tag">Quốc tế</span><h3>Kinh tế toàn cầu tăng trưởng chậm lại trong quý này</h3><p>Các chuyên gia dự báo lạm phát sẽ hạ nhiệt dần.</p></div></a>
+      <a href="quocte.html" class="card"><div class="thumb c-world">🌊</div><div class="body"><span class="tag">Quốc tế</span><h3>Nhiều quốc gia ven biển tăng cường ứng phó triều cường</h3><p>Kế hoạch đầu tư hạ tầng chống ngập được công bố.</p></div></a>
+      <a href="quocte.html" class="card"><div class="thumb c-world">✈️</div><div class="body"><span class="tag">Quốc tế</span><h3>Ngành hàng không quốc tế phục hồi mạnh mẽ</h3><p>Lượng hành khách vượt mức trước đại dịch ở nhiều tuyến bay.</p></div></a>
+    </div>
+
+    <h2 class="section-title">Giải trí <a href="giaitri.html">Xem thêm »</a></h2>
+    <div class="grid">
+      <a href="giaitri.html" class="card"><div class="thumb c-ent">🎬</div><div class="body"><span class="tag">Giải trí</span><h3>Liên hoan phim công bố danh sách đề cử năm nay</h3><p>Nhiều gương mặt mới góp mặt ở các hạng mục chính.</p></div></a>
+      <a href="giaitri.html" class="card"><div class="thumb c-ent">🎤</div><div class="body"><span class="tag">Giải trí</span><h3>Đêm nhạc lớn nhất năm bán hết vé chỉ sau vài phút</h3><p>Ban tổ chức cân nhắc thêm một đêm diễn.</p></div></a>
+      <a href="giaitri.html" class="card"><div class="thumb c-ent">📺</div><div class="body"><span class="tag">Giải trí</span><h3>Series truyền hình mới gây sốt trên mạng xã hội</h3><p>Khán giả bàn tán sôi nổi về cái kết bất ngờ.</p></div></a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Tin Nhanh 24h</p>
+    <p style="margin-top:8px">
+      <a href="index.html">Trang chủ</a>|<a href="quocte.html">Quốc tế</a>|<a href="giaitri.html">Giải trí</a>|<a href="thethao.html">Thể thao</a>|<a href="congnghe.html">Công nghệ</a>
+    </p>
+  </footer>
+
+  <script>
+    const d = new Date();
+    document.getElementById("today").textContent =
+      d.toLocaleDateString("vi-VN", { weekday: "long", day: "2-digit", month: "2-digit", year: "numeric" });
+  </script>
+</body>
+</html>
